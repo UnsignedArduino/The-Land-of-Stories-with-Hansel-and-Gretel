@@ -161,19 +161,21 @@ function start () {
             [myTiles.tile0,sprites.castle.tileGrass1,sprites.castle.tileGrass3,sprites.castle.tileGrass2,sprites.builtin.forestTiles0,myTiles.tile1,sprites.builtin.forestTiles1,sprites.builtin.forestTiles2,sprites.builtin.forestTiles3],
             TileScale.Sixteen
         ))
-    hero.setPosition(-10, scene.screenHeight() / 2)
-    guide.setPosition(scene.screenWidth() + 10, scene.screenHeight() / 2)
+    hero.y = scene.screenHeight() / 2
+    hero.right = 0
+    guide.y = scene.screenHeight() / 2
+    guide.left = scene.screenWidth()
     pause(1000)
     guide_walk_left()
     move_n_pixels(guide, -40, 0, 2000)
     guide_idle()
     say(guide, "Hero?", 250, 1000, 250)
     hero_walk_right()
-    move_n_pixels(hero, 80, 0, 1000)
+    move_n_pixels(hero, 70, 0, 1000)
     hero_idle()
     say(hero, "Yes, my lady?", 500, 1000, 250)
     guide_walk_left()
-    move_n_pixels(guide, -40, 0, 500)
+    move_n_pixels(guide, -30, 0, 500)
     guide_idle()
     say(guide, "Oh thank goodness you're here!", 250, 4000, 250)
     say(guide, "You know Hansel and Gretel?", 250, 4000, 250)
