@@ -4,7 +4,8 @@
     "dependencies": {
         "device": "*",
         "animation": "*",
-        "Color Fading": "github:jwunderl/pxt-color#v0.1.3"
+        "Color Fading": "github:jwunderl/pxt-color#v0.1.3",
+        "settings-blocks": "github:microsoft/pxt-settings-blocks#v1.0.0"
     },
     "files": [
         "main.blocks",
